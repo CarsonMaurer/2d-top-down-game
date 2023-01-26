@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1303698131
+    locked: 0
+  - name: Obstical
+    uniqueID: 3732235337
+    locked: 0
+  - name: Object
+    uniqueID: 1542173733
+    locked: 0
