@@ -50,3 +50,6 @@ TagManager:
   - name: Object
     uniqueID: 1542173733
     locked: 0
+  - name: Booster
+    uniqueID: 3445702113
+    locked: 0
