@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -34,5 +34,25 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
+    }
+    public void ReplayButtonPressed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void HomeButtonPressed()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void PauseButtonPressed()
+    {
+        Time.timeScale = 0;
+        PausePanel.SetActive(true);
+    }
+
+    public void PlayButtonPressed()
+    {
+        Time.timeScale = 1;
+        PausePanel.SetActive(false);
     }
 }
