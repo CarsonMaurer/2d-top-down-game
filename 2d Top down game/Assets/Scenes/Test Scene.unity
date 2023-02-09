@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdef5a6135868a34fbb8cdec2594de9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _value: 1
 --- !u!1 &566664895
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,7 +3018,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3065,6 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdef5a6135868a34fbb8cdec2594de9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _value: 1
 --- !u!1 &1870052674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Booster Shadow '
       objectReference: {fileID: 0}
+    - target: {fileID: 2354373490575842095, guid: 02cdd4efc282b6640afc2508d6abf454, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2354373490605831638, guid: 02cdd4efc282b6640afc2508d6abf454, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.869
@@ -4551,6 +4557,10 @@ PrefabInstance:
     - target: {fileID: 8637805526513867315, guid: 8f7f923ee7d1dd94e8d3c81169e71695, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637805526513867316, guid: 8f7f923ee7d1dd94e8d3c81169e71695, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f7f923ee7d1dd94e8d3c81169e71695, type: 3}

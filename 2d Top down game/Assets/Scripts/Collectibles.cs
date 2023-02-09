@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collectibles : MonoBehaviour
 {
+    [SerializeField] private int _value = 0;
     // Start is called before the first frame update
     void Start()
     {
