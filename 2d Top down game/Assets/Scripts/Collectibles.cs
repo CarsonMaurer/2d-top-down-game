@@ -21,9 +21,18 @@ public class Collectibles : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {  
             Debug.Log("I was hit by the player!");
+            
+            if(gameObject.CompareTag("Coin"))
+            {
+                LevelManager.Instance.UpdateLevelCoinCount(_value);
+            }
+            if(gameObject.CompareTag("Gas Can"))
+            {
+                LevelManager.Instance.UpdateGasAmount(_value);
+            }
             Destroy(this.gameObject);
-            //update collectiable
-        }
+            
+        } 
     }
 }
 

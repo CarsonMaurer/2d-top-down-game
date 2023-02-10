@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Coin
+  - Gas Can
   layers:
   - Default
   - TransparentFX
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: Booster
     uniqueID: 3445702113
+    locked: 0
+  - name: Player
+    uniqueID: 1801969915
     locked: 0
