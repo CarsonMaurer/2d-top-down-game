@@ -50,7 +50,7 @@ public class CarController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Start Line"))
         {
-
+            LevelManager.Instance.StartGasMeter();
         }
         if(other.gameObject.CompareTag("Finish Line"))
         {
