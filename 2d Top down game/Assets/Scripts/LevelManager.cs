@@ -84,8 +84,8 @@ public class LevelManager : MonoBehaviour
     {
         if(_currentGasAmount < _gasAmount)
         {
-            _gasAmount += amount;
-            GasAmountText.text = _gasAmount.ToString();
+            _currentGasAmount += amount;
+            GasAmountText.text = _currentGasAmount.ToString();
         }
       
     }
@@ -111,10 +111,12 @@ public class LevelManager : MonoBehaviour
     {
         while(_currentGasAmount > 0)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2.5f);
             _currentGasAmount--;
             GasAmountText.text = _currentGasAmount.ToString();
         }
+
+        GameOver();
     }
     public void StartGasMeter()
     {
