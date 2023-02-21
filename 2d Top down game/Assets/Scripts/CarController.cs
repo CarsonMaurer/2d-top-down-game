@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private float _sideMoveSpeed = 12f;
     [SerializeField] private float _boostSpeed = 5f;
-    [SerializeField] private float _xRange = 4.8f;
+    [SerializeField] private float _xRange = 5f;
+
+     public GameObject gameWon;
      
 
 
@@ -56,7 +61,8 @@ public class CarController : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Finish Line"))
         {
-            
+            Time.timeScale = 0;
+            gameWon.SetActive(true);
         }
         if(other.gameObject.CompareTag("Boost"))
         {
