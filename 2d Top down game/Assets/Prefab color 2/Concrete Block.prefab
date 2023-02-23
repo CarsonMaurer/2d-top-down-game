@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5580031790453668475}
   m_Layer: 0
   m_Name: Concrete Block
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,5 +109,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6, y: 7}
+  m_Size: {x: 2.6, y: 6}
   m_EdgeRadius: 0

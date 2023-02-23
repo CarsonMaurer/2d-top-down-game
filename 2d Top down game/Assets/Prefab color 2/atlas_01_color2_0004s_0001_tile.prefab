@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8003808114231493628}
   - component: {fileID: 8003808114231493629}
   m_Layer: 0
-  m_Name: atlas_01_color2_0004s_0000_train
+  m_Name: train
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8637805526513867315}
   - component: {fileID: 8637805526513867314}
   - component: {fileID: 8637805526513867316}
-  - component: {fileID: 524626693}
   - component: {fileID: 524626697}
+  - component: {fileID: 1168898783}
+  - component: {fileID: 1168898782}
   m_Layer: 0
   m_Name: gas
   m_TagString: Gas Can
@@ -113,7 +114,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.66, y: 2.42}
   m_EdgeRadius: 0
---- !u!95 &524626693
+--- !u!114 &524626697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637805526513867313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdef5a6135868a34fbb8cdec2594de9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 1
+--- !u!95 &1168898783
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -133,7 +147,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &524626697
+--- !u!114 &1168898782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

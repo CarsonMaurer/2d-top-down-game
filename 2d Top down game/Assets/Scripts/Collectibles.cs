@@ -29,6 +29,7 @@ public class Collectibles : MonoBehaviour
             if(gameObject.CompareTag("Gas Can"))
             {
                 LevelManager.Instance.UpdateGasAmount(_value);
+                LevelManager.Instance.SetGasFillAmount(_value);
             }
             Destroy(this.gameObject);
             

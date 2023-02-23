@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
@@ -14,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public TextMeshProUGUI CoinCountText;
     public TextMeshProUGUI GasAmountText;
     public TextMeshProUGUI CountdownTimerText;
+    public Slider GasMeterSlider;
 
     [SerializeField] private int _coinsCollected = 0;
     [SerializeField] private int _gasAmount = 10;
@@ -34,7 +36,9 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1;
         CoinCountText.text = _coinsCollected.ToString();
         GasAmountText.text = _gasAmount.ToString();
+        SetMaxGasFillAmount(_gasAmount);
         StartCoroutine(StartCountdownTimer());
+        
     }
 
     // Update is called once per frame
@@ -79,8 +83,21 @@ public class LevelManager : MonoBehaviour
         CoinCountText.text = _coinsCollected.ToString();
         
     }
-
-    public void UpdateGasAmount(int amount)
+    public void SetMaxGasFillAmount(int amount)
+    {
+        GasMeterSlider.maxValue = amount;
+        GasMeterSlider.value = amount;
+    }
+    public void SetGasFillAmount(int amount) //slide value
+    {
+        if(_currentGasAmount < _gasAmount)
+        {
+            _currentGasAmount += amount;
+            GasMeterSlider.value = _currentGasAmount;
+        }
+        
+    }
+    public void UpdateGasAmount(int amount) //text value
     {
         if(_currentGasAmount < _gasAmount)
         {
@@ -114,6 +131,7 @@ public class LevelManager : MonoBehaviour
             yield return new WaitForSeconds(2.5f);
             _currentGasAmount--;
             GasAmountText.text = _currentGasAmount.ToString();
+            GasMeterSlider.value = _currentGasAmount;
         }
 
         GameOver();

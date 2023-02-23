@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5556956021584181257}
   m_Layer: 0
   m_Name: hole 1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,4 +100,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.395
+  m_Radius: 1
