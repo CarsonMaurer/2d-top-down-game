@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3498109722364185898}
   - component: {fileID: 3498109722364185899}
   - component: {fileID: 457116178}
+  - component: {fileID: 5009339342076398267}
   m_Layer: 0
   m_Name: car 10
   m_TagString: Player
@@ -129,3 +130,24 @@ MonoBehaviour:
   _boostSpeed: 5
   _xRange: 5
   gameWon: {fileID: 0}
+--- !u!50 &5009339342076398267
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498109722364185892}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
