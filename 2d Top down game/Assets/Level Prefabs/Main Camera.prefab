@@ -98,4 +98,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToFollow: {fileID: 0}
-  FollowOffSet: 7.11
+  FollowOffSet: 7.6

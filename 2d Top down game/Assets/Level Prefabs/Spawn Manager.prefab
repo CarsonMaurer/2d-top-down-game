@@ -45,9 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoadSegments:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 173111530313683578, guid: 97b93d7a0eb3eea48b4d3f31d79cd19f, type: 3}
+  - {fileID: 7545894706779569462, guid: 009e0ba9d75fba44e9e4ca9f62719aa7, type: 3}
+  - {fileID: 493971675139540363, guid: 0a09352ea5289954980c275dd1dd3ab1, type: 3}
+  - {fileID: 7051533700678150518, guid: 388a4b2d5269c854392672bb012c2de4, type: 3}
+  - {fileID: 6020263237142155, guid: 695139ede4eb39e46a58c3da9947ddd8, type: 3}
+  - {fileID: 2006609109953398779, guid: 6bce7b276b4d9664f8509e8abe082b8d, type: 3}
+  - {fileID: 1720907792203872766, guid: 167990f474f9fea4cad4a3b1857c9ba8, type: 3}
+  - {fileID: 3820058329632029602, guid: 08e27dccb509ad943812ca5f7d4db674, type: 3}
+  - {fileID: 6304461447218465896, guid: 12183f7a196b6ad4c935598e8557961a, type: 3}
+  - {fileID: 4237052614681793602, guid: 697ed0db3c0e25d42a81a92605b31c8e, type: 3}
+  - {fileID: 290421696629698436, guid: 8801f9d08e365db44a3de0a188a415a0, type: 3}

@@ -115,11 +115,11 @@ public class LevelManager : MonoBehaviour
 
         while(_countdownTimer > 0)
         {
-            CountdownTimerText.text = _countdownTimer.ToString();
+            CountdownTimerText.text = _countdownTimer.ToString(   );
             yield return new WaitForSeconds(1f);
             _countdownTimer--;
         }
-        CountdownTimerText.text = "GO!";
+        CountdownTimerText.text = "    GO!";
         _isGameActive = true;
         yield return new WaitForSeconds(1f);
         CountdownTimerText.gameObject.SetActive(false);

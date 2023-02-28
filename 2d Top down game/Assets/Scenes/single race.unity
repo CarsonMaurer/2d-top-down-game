@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5966207523814544182, guid: d2cfa5a7ff056404984cf557a79a2c7b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5966207523814544182, guid: d2cfa5a7ff056404984cf557a79a2c7b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -581,7 +581,7 @@ Transform:
   - {fileID: 813352152}
   - {fileID: 2604734}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &824756757814645663
 PrefabInstance:
@@ -753,10 +753,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 517527252202120649, guid: f444652eb9cf1d24793d8877725a9f4b, type: 3}
-      propertyPath: FollowOffSet
-      value: 7.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 517527252202120649, guid: f444652eb9cf1d24793d8877725a9f4b, type: 3}
       propertyPath: ObjectToFollow
       value: 
       objectReference: {fileID: 457116174}
@@ -779,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498109722364185897, guid: 1bdb8fa1a3d7e2b458dc0eb8253f7a5c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3498109722364185897, guid: 1bdb8fa1a3d7e2b458dc0eb8253f7a5c, type: 3}
       propertyPath: m_LocalPosition.x
