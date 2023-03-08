@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    public void SetCoinCount(int amount)
+    {
+        _coinCount += amount;
+    }
+    public int GetCoinCount()
+    {
+        return _coinCount;
+    }
     public void RaceButtonPressed()
     {
         SceneManager.LoadScene("Game Mode");

@@ -2,12 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
+        if(GameObject.Find("CoinText") != null)
+        {
+            Debug.Log(" I found the CoinText");
+            GameObject.Find("CoinText").GetComponent<TextMeshProUGUI>;
+        }
+        else
+        {
+            Debug.Log("I can't find the CoinText");
+        }
+        
         
     }
 

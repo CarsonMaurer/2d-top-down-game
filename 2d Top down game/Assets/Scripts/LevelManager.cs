@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public GameObject GameOverPanel;
     public TextMeshProUGUI CoinCountText;
     public TextMeshProUGUI GasAmountText;
+    public GameObject YouWonPanel;
     public TextMeshProUGUI CountdownTimerText;
     public Slider GasMeterSlider;
 
@@ -22,6 +23,7 @@ public class LevelManager : MonoBehaviour
     private int _countdownTimer = 3;
     [SerializeField] private int _currentGasAmount = 10;
     [SerializeField] private bool _isGameActive = false;
+    [SerializeField] private int _distanceTravelled = 0;
 
 
     void Awake()
@@ -55,6 +57,12 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
+        GameManager.Instance.SetCoinCount(_coinsCollected);
+    }
+    public void YouWon()
+    {
+        Time.timeScale = 0;
+        YouWonPanel.SetActive(true);
     }
     public void ReplayButtonPressed()
     {
@@ -112,6 +120,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         CountdownTimerText.gameObject.SetActive(true);
         yield return new WaitForSeconds(1f);
+        
 
         while(_countdownTimer > 0)
         {

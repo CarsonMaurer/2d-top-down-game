@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float _sideMoveSpeed = 12f;
     [SerializeField] private float _boostSpeed = 5f;
     [SerializeField] private float _xRange = 5f;
+    [SerializeField] private bool _crossedFinishLine = false;
 
      public GameObject gameWon;
      
@@ -61,8 +62,9 @@ public class CarController : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Finish Line"))
         {
-            Time.timeScale = 0;
-            gameWon.SetActive(true);
+            _crossedFinishLine = true;
+            LevelManager.Instance.YouWon();
+            
         }
         if(other.gameObject.CompareTag("Boost"))
         {
