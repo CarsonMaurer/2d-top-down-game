@@ -11,6 +11,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
 
     public GameObject PausePanel;
+    public TextMeshProUGUI CurrentDistanceWon, CurrentDistanceLost;
+    public TextMeshProUGUI BestDistanceWon, BestDistanceLost;
     public GameObject GameOverPanel;
     public TextMeshProUGUI CoinCountText;
     public TextMeshProUGUI GasAmountText;
@@ -23,7 +25,11 @@ public class LevelManager : MonoBehaviour
     private int _countdownTimer = 3;
     [SerializeField] private int _currentGasAmount = 10;
     [SerializeField] private bool _isGameActive = false;
-    [SerializeField] private int _distanceTravelled = 0;
+    
+    public Transform PlayerCar;
+    [SerializeField] private Vector2 _startPos, _endPos;
+    private float _distanceTravelled;
+    
 
 
     void Awake()
@@ -35,6 +41,7 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
+        _startPos = PlayerCar.position;
         Time.timeScale = 1;
         CoinCountText.text = _coinsCollected.ToString();
         GasAmountText.text = _gasAmount.ToString();
@@ -55,9 +62,22 @@ public class LevelManager : MonoBehaviour
     }
     public void GameOver()
     {
+        _endPos = PlayerCar.position;
+        CalculateDistanceTraveled();
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
         GameManager.Instance.SetCoinCount(_coinsCollected);
+    }
+    public void CalculateDistanceTraveled()
+    {
+        float totalDistance = _endPos.y - _startPos.y;
+        GameManager.Instance.SetBestDistanceTraveled(totalDistance);
+        float bestDistance = GameManager.Instance.GetBestDistanceTraveled();
+        CurrentDistanceLost.text = ((int)totalDistance).ToString();
+        CurrentDistanceWon.text = ((int)totalDistance).ToString();
+        BestDistanceLost.text = ((int)bestDistance).ToString();
+        BestDistanceWon.text = ((int)bestDistance).ToString();
+
     }
     public void YouWon()
     {
@@ -67,6 +87,16 @@ public class LevelManager : MonoBehaviour
     public void ReplayButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void GoToNextCourse()
+    {
+       int currentSceneIndex;
+       currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+       SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+    public void CupComplete()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void HomeButtonPressed()

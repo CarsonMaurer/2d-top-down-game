@@ -3281,7 +3281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '  Ready'
+  m_text: ' Ready'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b1c2ba53709b2b541a09eaac2a228025, type: 2}
   m_sharedMaterial: {fileID: -4735329983260624915, guid: b1c2ba53709b2b541a09eaac2a228025, type: 2}
@@ -3727,12 +3727,12 @@ GameObject:
   - component: {fileID: 5966207523354285918}
   - component: {fileID: 5966207523354285919}
   m_Layer: 5
-  m_Name: Restart Button
+  m_Name: Go to next level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5966207523354285904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3782,7 +3782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b1229cdfa88939e48abe8fbb7a4f6efe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 515b70a9ed01a134da399dd5b3184892, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4919,7 +4919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 18}
+  m_AnchoredPosition: {x: 22, y: 7}
   m_SizeDelta: {x: 183, y: 179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5966207523839251357
@@ -4950,7 +4950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 222124dfb2214734884215b92571a1ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8dfba84547c1e08469e985b93cd198c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
